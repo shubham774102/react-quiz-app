@@ -1,0 +1,154 @@
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  margin-left: 30px;
+  margin-right: 47px;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  background-color: #fffb00;
+  width: 90%; /* Adjusted for smaller screens */
+  max-width: 800px; /* Keeps the width limited on larger screens */
+  min-height: 450px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 5px 5px 28px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column; /* Stack elements on smaller screens */
+  justify-content: space-evenly;
+}
+
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-section h4 {
+  color: #ff0000;
+  text-shadow: 1px 1px 1px rgb(120, 0, 0);
+}
+
+.question-section h2 {
+  color: rgb(62, 11, 11);
+  text-shadow: 1px 1px 1px black;
+}
+
+.question-count {
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 20px;
+}
+
+.question-count span {
+  color: rgb(62, 11, 11);
+  text-shadow: 1px 1px 2px black;
+  font-size: 25px;
+}
+
+.question-text {
+  color: rgb(62, 11, 11);
+  font-size: 20px;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 12px;
+}
+
+.correct {
+  background-color: #2f922f;
+ }
+
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  width: 100%;
+  font-size: 20px; /* Adjusted for smaller screens */
+  color: #ffffff;
+  margin-bottom: 10px;
+  background-color: #ff00a6;
+  border-radius: 15px;
+  display: flex;
+  padding: 10px; /* Increased for better touch areas */
+  justify-content: flex-start;
+  align-items: center;
+  border: 3px solid #4c4c4c;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5b004a;
+  color: #eeff00;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column; /* Stack actions on smaller screens */
+  margin-top: 15px;
+  gap: 10px; /* Adds space between buttons */
+}
+
+.actions button {
+  background-color: #ff0000;
+  justify-content: center;
+}
+
+.actions button:hover {
+  background-color: #bc0000;
+  color: white;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .question-text {
+    font-size: 18px; /* Reduce text size for small screens */
+  }
+
+  button {
+    font-size: 18px; /* Adjust button text size */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .actions {
+    flex-direction: column; /* Stack buttons */
+  }
+
+  .question-section h2 {
+    font-size: 22px; /* Reduce header size */
+  }
+
+  .question-count span {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    width: 95%; /* Take up more space on smaller screens */
+    padding: 15px; /* Reduce padding */
+  }
+
+  button {
+    font-size: 16px; /* Further adjust button size */
+    padding: 6px; /* Smaller padding for mobile */
+  }
+
+  .question-section h2 {
+    font-size: 20px; /* Adjust header for very small screens */
+  }
+}

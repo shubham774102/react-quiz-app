@@ -1,0 +1,117 @@
+body {
+     font-family: 'Arial', sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: white;
+ }
+ 
+ .certificate-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     padding: 20px;
+
+ }
+ 
+ .certificate-card {
+     width: 100%;
+     max-width: 800px;
+     background-color: #ffffff;
+     border: 2px solid #ddd;
+     border-radius: 15px;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+     text-align: center;
+     padding: 30px;
+ }
+ 
+ .certificate-header {
+     margin-bottom: 20px;
+ }
+ 
+ .certificate-logo {
+     height: 120px;
+     margin-bottom: 10px;
+ }
+ 
+ .certificate-title {
+     font-size: 2rem;
+     font-weight: bold;
+     color: #333;
+     margin: 0;
+ }
+ 
+ .certificate-body {
+     margin-top: 20px;
+ }
+ 
+ .certificate-subtitle {
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: #e63946;
+     margin-bottom: 15px;
+ }
+ 
+ .certificate-text {
+     font-size: 1rem;
+     color: #555;
+     line-height: 1.6;
+     margin: 10px 0;
+ }
+ 
+ .certificate-footer {
+     margin-top: 30px;
+ }
+ 
+ .retry-button {
+     padding: 10px 20px;
+     font-size: 1rem;
+     color: #fff;
+     background-color: #007bff;
+     border: none;
+     border-radius: 25px;
+     cursor: pointer;
+     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+     transition: all 0.3s ease;
+ }
+ 
+ .retry-button:hover {
+     background-color: #0056b3;
+     box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+     .certificate-card {
+         padding: 20px;
+     }
+ 
+     .certificate-title {
+         font-size: 1.8rem;
+     }
+ 
+     .certificate-subtitle {
+         font-size: 1.2rem;
+     }
+ 
+     .retry-button {
+         font-size: 0.9rem;
+         padding: 8px 16px;
+     }
+ }
+ 
+ @media (max-width: 480px) {
+     .certificate-title {
+         font-size: 1.5rem;
+     }
+ 
+     .certificate-subtitle {
+         font-size: 1rem;
+     }
+ 
+     .retry-button {
+         font-size: 0.8rem;
+         padding: 6px 12px;
+     }
+ }
+ 
